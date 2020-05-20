@@ -78,4 +78,4 @@
 
 
 # Special characters can be escaped
-puts 'Marco asks \'Hey man, how\'s it going?\''
+# puts 'Marco asks \'Hey man, how\'s it going?\''
