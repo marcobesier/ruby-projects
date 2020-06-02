@@ -38,3 +38,20 @@ a.unshift(0)
 a.uniq
 a.uniq!
 p a
+
+# check whether a is empty
+a.empty?
+
+b = []
+b.empty?
+
+# Check whether a includes the element 5
+a.include?(5)
+a.include?("5")
+
+# Pushing an item
+a.push("new item")
+
+# Removing and RETURNING the last item of the array
+b = a.pop
+p b
