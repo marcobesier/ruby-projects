@@ -55,3 +55,22 @@ a.push("new item")
 # Removing and RETURNING the last item of the array
 b = a.pop
 p b
+
+# Joining elements of an array to a single strings
+a.join
+
+# Join with dashes in between
+a.join("-")
+
+# ...with commas and spaces
+a.join(", ")
+
+# Split by dashes
+c = a.join("-")
+c.split("-")
+
+# Turn sentence into array full of strings. Elements are the words
+%w(hello my name is Marco)
+
+# One grab the last expression with an underscore
+z = _
