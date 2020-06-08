@@ -9,3 +9,7 @@ puts sample_hash
 # This is mainly used when the keys are not expected to change.
 another_hash = {a: 1, b: 2, c: 3}
 puts another_hash
+
+my_details.each do |key, value|
+  puts "The class for key is #{key.class} and the class for value is #{value.class}."
+end
