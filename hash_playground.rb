@@ -10,6 +10,7 @@ puts sample_hash
 another_hash = {a: 1, b: 2, c: 3}
 puts another_hash
 
+# Loop through hash
 my_details.each do |key, value|
   puts "The class for key is #{key.class} and the class for value is #{value.class}."
 end
