@@ -14,3 +14,7 @@ puts another_hash
 my_details.each do |key, value|
   puts "The class for key is #{key.class} and the class for value is #{value.class}."
 end
+
+# Add entry to hash
+another_hash[:d] = 4
+p another_hash
