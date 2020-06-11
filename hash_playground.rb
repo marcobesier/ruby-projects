@@ -18,3 +18,7 @@ end
 # Add entry to hash
 another_hash[:d] = 4
 p another_hash
+
+# Change entry with key "a"
+another_hash[:a] = 2
+p another_hash
