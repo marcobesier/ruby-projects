@@ -11,7 +11,7 @@ another_hash = {a: 1, b: 2, c: 3}
 puts another_hash
 
 # Loop through hash
-my_details.each do |key, value|
+another_hash.each do |key, value|
   puts "The class for key is #{key.class} and the class for value is #{value.class}."
 end
 
@@ -22,3 +22,6 @@ p another_hash
 # Change entry with key "a"
 another_hash[:a] = 2
 p another_hash
+
+# Loop through hash in a single line
+another_hash.each {|key, value| puts "The key is #{key} and the value is #{value}."}
