@@ -28,3 +28,6 @@ another_hash.each {|key, value| puts "The key is #{key} and the value is #{value
 
 # Conditional in hash loop
 another_hash.select { |k, v| v.is_a?(String)}
+
+# Delete hash elements w.r.t. conditional
+another_hash.each { |k, v| another_hash.delete(k) if v.is_a?(String)}
