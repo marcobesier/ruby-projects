@@ -1,12 +1,13 @@
-require "bcrypt"
+$LOAD_PATH << "."
+require "crud"
 
-my_password = BCrypt::Password.create("my password")
-my_password_1 = BCrypt::Password.create("my password")
-my_password_2 = BCrypt::Password.create("my password")
+users = [
+          { username: "mashrur", password: "password1" },
+          { username: "jack", password: "password2" },
+          { username: "arya", password: "password3" },
+          { username: "jonshow", password: "password4" },
+          { username: "heisenberg", password: "password5" },
+        ]
 
-puts my_password
-puts my_password_1
-puts my_password_2
-
-# my_password = BCrypt::Password.new("$2a$12$DYemmJcni6imhgyaCQQ/Q.sdJg.4bq7T7GVLtk4gqQw1W9kQxsMoK")
-# puts my_password == "my password"
+hashed_users = Crud.create_secure_users(users)
+puts hashed_users
